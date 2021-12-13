@@ -1,0 +1,93 @@
+@font-face {
+    font-family: F1;
+    src: url(https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+:root {
+    --dim: rgba(0, 0, 0, .3);
+}
+
+* {
+    font-family: F1, monospace;
+    font-size: large;
+    color: white;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: red;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 100px;
+}
+
+tr {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+td, th {
+    background-color: var(--dim);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
+.container {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.dim {
+    background-color: var(--dim);
+}
+
+.speed {
+    background-color: #A628C0;
+}
+
+#extra:hover {
+    cursor: pointer;
+}
+
+
+/* https://stackoverflow.com/questions/2310734/how-to-make-html-text-unselectable */
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+svg:hover {
+    fill: var(--dim);
+    cursor: pointer;
+}
