@@ -6,11 +6,6 @@ const racesInput = document.getElementById("races");
 const resultsTableBody = document.getElementById("results");
 const extraDiv = document.getElementById("extra");
 
-const params = new URLSearchParams(window.location.search);
-firstInput.value = params.get("first");
-secondInput.value = params.get("second");
-racesInput.value = params.get("races");
-
 let extra = true;
 
 oninput = () => {
