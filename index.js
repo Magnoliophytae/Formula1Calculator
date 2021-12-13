@@ -11,9 +11,6 @@ firstInput.value = params.get("first");
 secondInput.value = params.get("second");
 racesInput.value = params.get("races");
 
-
-document.getElementById("standings").href = `https://www.formula1.com/en/results.html/${new Date().getFullYear()}/drivers.html`;
-
 let extra = true;
 
 oninput = () => {
