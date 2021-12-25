@@ -7,7 +7,7 @@ fetch(url).then(response => {
         title.textContent = `${data.MRData.StandingsTable.season} Drivers' Standings`;
         data.MRData.StandingsTable.StandingsLists[0].DriverStandings.forEach((x, i) => {
             const row = table.insertRow();
-            row.insertCell().textContent = `${i + 1}. ${x.Driver.givenName} ${x.Driver.familyName}`;
+            row.insertCell().textContent = `${x.positionText}. ${x.Driver.givenName} ${x.Driver.familyName}`;
             row.insertCell().textContent = x.points;
         });
     });
